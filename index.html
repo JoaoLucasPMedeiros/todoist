@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todoist</title>
+  <link rel="shortcut icon" href="planer.png" type="image/x-icon" >
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header class="container">
+    <div class="bloco1" id="bloco1">
+      <input type="text" class="titulo" id="titulo" placeholder="Título" maxlength="15">
+      <br>
+      <textarea class="descricao"id="descricao"cols="30" placeholder="Observação"  rows="10" ></textarea>
+      <br>
+      <input type="date" class="data" id="data"  onblur="validar()">   
+      <h4 id="alteraData" class="alteraData">Hoje <img id="img" src="assets/alterar.png" alt=""></h4>                                                                           
+      <button type=reset id="btn">Adicionar</button>
+    </div>
+  </header>
+  <main class="cards" id="cards">
+
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
